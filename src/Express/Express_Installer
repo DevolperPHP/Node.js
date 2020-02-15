@@ -1,0 +1,3 @@
+To install express write on the terminal this
+npm install express --save
+and wait it to install
