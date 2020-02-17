@@ -1,0 +1,26 @@
+How can I run the server ?
+- First open the package.json file you'll notice this
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "jade": "~1.11.0",
+    "morgan": "~1.9.1"
+  }
+  The express generator gave you the dependencies and you need to download it
+  
+How can I download it?
+- It so easy just open the terminal and write of your project "npm install"
+  and now you can run it
+  
+How can I run it?
+- Write on the terminal "node bin/www"
+
+Why should I write bin/www?
+- Because the server file location in bin folder in www file
+  so the path is bin/www
+  
+What is the url of the server?
+- Express generator will make the server in your PC local host
+  so the url will be "localhost:3000"
