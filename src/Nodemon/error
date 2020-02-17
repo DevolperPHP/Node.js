@@ -1,0 +1,7 @@
+if you have any error with nodemon like
+nodemon command not found
+open the terminal and write "npm uninstall nodemon"
+after you remove it wirte "npm uninstall -g nodemon"
+now you removed the nodemon from your PC 
+now write on the terminal "npm install -g --force nodemon"
+and now you can use it
