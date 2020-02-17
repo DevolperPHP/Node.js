@@ -1,0 +1,15 @@
+Why should I install  a express generator?
+ - Exprees generator can make a new project with a few second
+   by write "express [project name] in cmd
+ 
+ What is the propaties of Express generator?
+ - When you make a new project it will add a server to the project
+   Automaticlly and add the package.json automaticlly
+   
+ How can I install express generator?
+ - open cmd panel and write "npm install express-generator -g"
+   and wait a few second
+   
+ How can I make a new project with express generator?
+  - open the cmd panel and write "express [project name]
+    Ex : express Test
