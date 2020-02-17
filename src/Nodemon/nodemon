@@ -1,0 +1,10 @@
+What is nodemon?
+- nodemon is a great medule it is a server runner
+
+Why should I install nodemon?
+- When you make any thing and run you'll see the result
+  but if you changed anything you need to save the file
+  and disable the server and enable it again
+  but if you use nodemon the server will restart automaticlly
+  like when you change anything you don't need to restart the server
+  just save the file and you'll see the result by refreshing the page direicly
