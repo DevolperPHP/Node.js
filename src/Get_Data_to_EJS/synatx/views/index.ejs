@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>----------------------------------
+    <% data.forEach(users => { %>
+    
+      <p>Name : <%= users.name %></p>
+      <p>Age : <%= users.age %></p>
+      <p>Location : <%= users.location %></p>
+      <p>Date : <%= users.date %></p>
+      <p>Date : <%= users._id %></p>
+      ----------------------------------
+    <%})%> 
+    </body>
+</html>
