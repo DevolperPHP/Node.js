@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+    <body>
+    <h1>name: <%= data.name %></h1>
+    <h1>age: <%= data.age %></h1>
+    <h1>email: <%= data.email %></h1>
+    <h1>Bio: <%= data.bio%></h1>
+    <h1>Posts: <%= data.Posts%></h1>
+    <br>
+    <button onclick="window.location.href = '/edit'">edit</button>
+    <form action="/user/<%= data.id%>/delete?_method=DELETE" method="POST">
+        <button onclick="window.location.href = window.location.href + '/delete'">Delete</button>
+    </form>
+    <button onclick="window.location.href = window.location.href + '/logout'">logout</button>
+    <button onclick="window.location.href ='/post'">New Post</button>
+<br>
+    <% post.forEach(userPost => {%>
+    <br>
+      <div class="card text-center">
+  <div class="card-header">
+    <%=data.name%>
+  </div>
+  <div class="card-body">
+    <h3 class="card-title"><%=userPost.title%></h3>
+    <p class="card-text"><%=userPost.sub%></p>
+    <a href="#" class="btn btn-primary">edit</a>
+    <br> 
+    <form action="/post/<%= userPost.id%>/delete?_method=DELETE" method="POST">
+        <button class="btn btn-danger" onclick="window.location.href = '/post/<%= userPost.id%>/delete' ">delete</button> 
+    </form>
+  </div>
+  <div class="card-footer text-muted">
+    <%=userPost.date%>
+  </div>
+</div>
+<br>
+<br>
+    <%})%> 
+</div>
+    </body>
+</html>
