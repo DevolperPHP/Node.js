@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+    <form action="/edit" method="POST">
+    <h1>name: <input type="text" name="newName" value="<%= data.name%>"></h1>
+    <h1>age: <input type="text" name="newAge" value="<%= data.age%>"></h1>
+    <h1>email: <input type="text" name="newEmail" value="<%= data.email%>"></h1>
+    <h1>Bio: <input type="text" name="newBio" value="<%= data.bio%>"></h1>
+    <h1>Password: <input type="text" name="newPassword" value=""></h1>
+    <button type="">Done</button>
+    </form>
+    </body>
+</html>
